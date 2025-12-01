@@ -10,8 +10,8 @@ def run_hand_tracker():
     cam = cv2.VideoCapture(0)
 
     with mp_hands.Hands(
-            model_complexity=0,
-            max_num_hands=2,
+            model_complexity=1,
+            max_num_hands=4,
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5
     ) as hands:
